@@ -1,0 +1,7 @@
+{
+  "name": "Book Donation",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
