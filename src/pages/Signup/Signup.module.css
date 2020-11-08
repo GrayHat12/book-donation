@@ -1,0 +1,84 @@
+.page {
+  --background: linear-gradient(180deg, #73aef4 0%, #398ae5 100%);
+}
+.title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+.titlediv {
+  padding-top: 30px;
+  text-align: center;
+}
+.inpitemdiv {
+  width: 80%;
+  margin: auto;
+  margin-top: 15px;
+}
+.inplab {
+  --color: #f7f7f7 !important;
+  font-family: "Open Sans", sans-serif;
+}
+.input {
+  font-family: "Open Sans", sans-serif;
+  --background: #6ca8f1;
+  margin-top: 5px;
+  border-radius: 10px;
+  height: 60px;
+  box-shadow: 2px 5px #629fe6;
+}
+.lbdiv {
+  width: 80%;
+  margin: auto;
+}
+.lbutton {
+  width: 100%;
+  margin: auto;
+  margin-top: 40px;
+  --background: white;
+  --color: #56789f;
+  font-family: "Open Sans", sans-serif !important;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  height: 50px;
+  --border-radius: 30px !important;
+  --box-shadow: 1px 3px #3e72a6;
+}
+.center {
+  text-align: center;
+  margin-top: 20px;
+}
+.or {
+  font-family: "Open Sans", sans-serif !important;
+}
+.siw {
+  font-family: "Open Sans", sans-serif !important;
+}
+.cont {
+  max-width: 80px;
+  height: 80px;
+  margin: auto;
+  --border-radius: 50%;
+  padding: 0;
+  --padding-start: 0;
+  --padding-end: 0;
+}
+.sg {
+  max-width: 80px;
+  max-height: 80px;
+  margin: auto;
+  border-radius: 50%;
+  background-color: white;
+}
+.su {
+  font-family: "Open Sans", sans-serif !important;
+  color: white !important;
+  font-weight: 600;
+}
+.error {
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+}

@@ -1,0 +1,14 @@
+.toolbar {
+  --background: #5985bb;
+}
+.title {
+  font-family: "Open Sans", sans-serif;
+}
+.button {
+  font-family: "Open Sans", sans-serif;
+  --color: white !important;
+}
+.logout {
+  width: 20px;
+  height: 20px;
+}

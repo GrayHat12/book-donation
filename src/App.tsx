@@ -1,8 +1,7 @@
 import React from 'react';
-import { Redirect, Route } from 'react-router-dom';
+import { Redirect, Route, Switch } from 'react-router-dom';
 import { IonApp, IonRouterOutlet } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import Home from './pages/Home';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -22,13 +21,33 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import 'antd/dist/antd.css';
+import './App.css';
+import { AuthProvider } from './context/AuthProvider';
+import LoginFC from './pages/Login/Login';
+import SignupFC from './pages/Signup/Signup';
+import ForgotPasswordFC from './pages/ForgotPassword/ForgotPassword';
+import PrivateRoute from './route/PrivateRoute';
+import BooksNeededFC from './pages/BooksNeeded/BooksNeeded';
+import BooksGivenFC from './pages/BooksGiven/BooksGiven';
+import SettingsFC from './pages/Settings/Settings';
 
 const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
       <IonRouterOutlet>
-        <Route path="/home" component={Home} exact={true} />
-        <Route exact path="/" render={() => <Redirect to="/home" />} />
+        <AuthProvider>
+          <Switch>
+            <Route path="/login" component={LoginFC} exact={true} />
+            <Route path="/signup" component={SignupFC} exact={true} />
+            <Route path="/forgot-password" component={ForgotPasswordFC} exact={true} />
+            <PrivateRoute path="/need" component={BooksNeededFC} exact={true} />
+            <PrivateRoute path="/give" component={BooksGivenFC} exact={true} />
+            <PrivateRoute path="/settings" component={SettingsFC} exact={true} />
+            <Route exact path="/" render={() => <Redirect to="/need" />} />
+            <Route exact path="/home" render={() => <Redirect to="/need" />} />
+          </Switch>
+        </AuthProvider>
       </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>
