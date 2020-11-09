@@ -110,7 +110,7 @@ function ForgotPasswordFC(props: Props) {
                     <IonButton onClick={resetPasswordEP} disabled={loading} className={styles.lbutton}>Reset Password</IonButton>
                 </div>
                 <div className={styles.center}>
-                    <IonButton disabled={loading} onClick={loginGP} className={styles.cont}>
+                    <IonButton disabled={true} onClick={loginGP} className={styles.cont}>
                         <IonImg className={styles.sg} src="https://thumbs.gfycat.com/FlusteredMajorBoto-max-1mb.gif" />
                     </IonButton>
                 </div>
