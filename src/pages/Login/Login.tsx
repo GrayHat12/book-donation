@@ -111,7 +111,7 @@ function LoginFC(props: Props) {
                 </div>
                 <div className={styles.center}>
                     <IonButton disabled={true} onClick={loginGP} className={styles.cont}>
-                        <IonImg className={styles.sg} src="https://p7cdn4static.sharpschool.com/UserFiles/Servers/Server_94078/Image/dancing%20book.gif" />
+                        <IonImg className={styles.sg} src="https://thumbs.gfycat.com/FlusteredMajorBoto-max-1mb.gif" />
                     </IonButton>
                 </div>
                 <div className={styles.center}>

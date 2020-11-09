@@ -5,7 +5,7 @@
   height: 100vh;
   justify-content: center;
   align-items: center;
-  background: #3989e559;
+  background: #054a2950;
   z-index: 1000;
   backdrop-filter: saturate(90%) blur(10px);
 }

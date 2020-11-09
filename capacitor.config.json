@@ -1,6 +1,6 @@
 {
-  "appId": "com.sharda.grayhat",
-  "appName": "Book Donation",
+  "appId": "com.sharda.muskan",
+  "appName": "Books",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "build",
