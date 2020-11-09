@@ -1,6 +1,6 @@
 {
-  "appId": "com.sharda.grayhat",
-  "appName": "Book Donation",
+  "appId": "com.sharda.shravyam",
+  "appName": "Book Worm",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "build",

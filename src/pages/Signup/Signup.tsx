@@ -137,11 +137,11 @@ function SignupFC(props: Props) {
                 </div>
                 <div className={styles.center}>
                     <IonButton disabled={true} onClick={signupGP} className={styles.cont}>
-                        <IonImg className={styles.sg} src="https://p7cdn4static.sharpschool.com/UserFiles/Servers/Server_94078/Image/dancing%20book.gif" />
+                        <IonImg className={styles.sg} src="https://i2.wp.com/media.giphy.com/media/9UZZkQDcquUVfCjTg3/giphy.gif" />
                     </IonButton>
                 </div>
                 <div className={styles.center}>
-                    <span className={styles.siw}>Don't have an account?</span>
+                    <span className={styles.siw}>Already have an account?</span>
                     <a href="/login"><span className={styles.su}> Sign In</span></a>
                 </div>
             </IonContent>
