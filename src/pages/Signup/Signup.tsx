@@ -137,7 +137,7 @@ function SignupFC(props: Props) {
                 </div>
                 <div className={styles.center}>
                     <IonButton disabled={true} onClick={signupGP} className={styles.cont}>
-                        <IonImg className={styles.sg} src="https://p7cdn4static.sharpschool.com/UserFiles/Servers/Server_94078/Image/dancing%20book.gif" />
+                        <IonImg className={styles.sg} src="https://i.pinimg.com/originals/84/ac/b7/84acb759da6992bbff0e48a60e3a2482.gif" />
                     </IonButton>
                 </div>
                 <div className={styles.center}>
