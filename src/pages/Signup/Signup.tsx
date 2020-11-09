@@ -141,7 +141,7 @@ function SignupFC(props: Props) {
                     </IonButton>
                 </div>
                 <div className={styles.center}>
-                    <span className={styles.siw}>Don't have an account?</span>
+                    <span className={styles.siw}>Already have an account?</span>
                     <a href="/login"><span className={styles.su}> Sign In</span></a>
                 </div>
             </IonContent>
