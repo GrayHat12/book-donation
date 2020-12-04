@@ -20,9 +20,8 @@ import '@ionic/react/css/flex-utils.css';
 import '@ionic/react/css/display.css';
 
 /* Theme variables */
-import './theme/variables.css';
-import 'antd/dist/antd.css';
 import './App.css';
+import './theme/variables.css';
 import { AuthProvider } from './context/AuthProvider';
 import LoginFC from './pages/Login/Login';
 import SignupFC from './pages/Signup/Signup';
@@ -30,7 +29,6 @@ import ForgotPasswordFC from './pages/ForgotPassword/ForgotPassword';
 import PrivateRoute from './route/PrivateRoute';
 import BooksNeededFC from './pages/BooksNeeded/BooksNeeded';
 import BooksGivenFC from './pages/BooksGiven/BooksGiven';
-import SettingsFC from './pages/Settings/Settings';
 
 const App: React.FC = () => (
   <IonApp>
@@ -43,7 +41,6 @@ const App: React.FC = () => (
             <Route path="/forgot-password" component={ForgotPasswordFC} exact={true} />
             <PrivateRoute path="/need" component={BooksNeededFC} exact={true} />
             <PrivateRoute path="/give" component={BooksGivenFC} exact={true} />
-            <PrivateRoute path="/settings" component={SettingsFC} exact={true} />
             <Route exact path="/" render={() => <Redirect to="/need" />} />
             <Route exact path="/home" render={() => <Redirect to="/need" />} />
           </Switch>

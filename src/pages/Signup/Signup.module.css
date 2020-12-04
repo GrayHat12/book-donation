@@ -1,9 +1,7 @@
 .page {
-  --background: linear-gradient(180deg, #137547 0%, #054A29 100%);
 }
 .title {
-  font-family: "Open Sans", sans-serif;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: bold;
   color: white;
 }
@@ -18,15 +16,11 @@
 }
 .inplab {
   --color: #f7f7f7 !important;
-  font-family: "Open Sans", sans-serif;
 }
 .input {
-  font-family: "Open Sans", sans-serif;
   --background: #1b9b5f;
   margin-top: 5px;
-  border-radius: 10px;
-  height: 60px;
-  box-shadow: 2px 5px #1cfc5f;
+  height: 40px;
 }
 .lbdiv {
   width: 80%;
@@ -38,23 +32,18 @@
   margin-top: 40px;
   --background: white;
   --color: #137547;
-  font-family: "Open Sans", sans-serif !important;
   font-size: 18px;
   font-weight: bold;
   letter-spacing: 1.5px;
   height: 50px;
-  --border-radius: 30px !important;
-  --box-shadow: 1px 3px #80faa5;
 }
 .center {
   text-align: center;
   margin-top: 20px;
 }
 .or {
-  font-family: "Open Sans", sans-serif !important;
 }
 .siw {
-  font-family: "Open Sans", sans-serif !important;
 }
 .cont {
   max-width: 80px;
@@ -73,7 +62,6 @@
   background-color: white;
 }
 .su {
-  font-family: "Open Sans", sans-serif !important;
   color: white !important;
   font-weight: 600;
 }

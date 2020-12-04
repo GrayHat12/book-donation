@@ -7,11 +7,9 @@ import styles from "./Post.module.css";
 interface Props extends Post { };
 
 function PostFC(props: Props) {
-    const { currentUser } = useAuth();
     return (
-        <IonCard className={currentUser?.uid === props.author ? styles.isAuth : styles.isNAuth}>
+        <IonCard>
             <IonCardHeader>
-                <img className={styles.img} src={props.book.image} alt={props.book.title} />
                 <IonCardSubtitle>{props.book.subTitle}</IonCardSubtitle>
                 <IonCardTitle>{props.title}</IonCardTitle>
             </IonCardHeader>

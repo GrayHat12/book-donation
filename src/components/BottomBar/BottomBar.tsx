@@ -9,13 +9,10 @@ function BottomBarFC(props: Props) {
     return (
         <IonTabBar selectedTab={props.selected} slot="bottom">
             <IonTabButton tab="need" href="/need">
-                <IonLabel>Books Needed</IonLabel>
+                <IonLabel>Requests</IonLabel>
             </IonTabButton>
             <IonTabButton tab="give" href="/give">
-                <IonLabel>Books for Donation</IonLabel>
-            </IonTabButton>
-            <IonTabButton tab="settings" href="/settings">
-                <IonLabel>Settings</IonLabel>
+                <IonLabel>Donations</IonLabel>
             </IonTabButton>
         </IonTabBar>
     );

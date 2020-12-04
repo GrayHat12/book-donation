@@ -75,9 +75,6 @@ function ForgotPasswordFC(props: Props) {
     return (
         <IonPage className={styles.page}>
             <IonContent className={styles.page}>
-                {loading ? <div className="sdiv">
-                    <div className="spinner"></div>
-                </div> : null}
                 <div className={styles.titlediv}>
                     <span className={styles.title}>Login</span>
                 </div>
@@ -108,11 +105,6 @@ function ForgotPasswordFC(props: Props) {
                 </div>
                 <div className={styles.lbdiv}>
                     <IonButton onClick={resetPasswordEP} disabled={loading} className={styles.lbutton}>Reset Password</IonButton>
-                </div>
-                <div className={styles.center}>
-                    <IonButton disabled={true} onClick={loginGP} className={styles.cont}>
-                        <IonImg className={styles.sg} src="https://thumbs.gfycat.com/FlusteredMajorBoto-max-1mb.gif" />
-                    </IonButton>
                 </div>
                 <div className={styles.center}>
                     <span className={styles.siw}>Don't have an account?</span>

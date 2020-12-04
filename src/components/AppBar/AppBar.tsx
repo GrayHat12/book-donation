@@ -8,19 +8,16 @@ interface Props {
 };
 
 function AppBar(props: Props) {
-    const { currentUser, logout } = useAuth();
+    const { logout } = useAuth();
     async function onLogout() {
         await logout();
     }
     return (
         <IonHeader>
             <IonToolbar className={styles.toolbar}>
-                <IonButton className={styles.button} slot="start" fill="clear" href="/home">
-                    HOME
-                </IonButton>
-                <IonTitle className={styles.title}>{props.title} - {currentUser?.displayName}</IonTitle>
-                <IonButton fill="clear" onClick={onLogout} slot="end" className={styles.button}>
-                    <img className={styles.logout} src="https://cdn.onlinewebfonts.com/svg/img_356268.png" alt="logout"></img>
+                <IonTitle className={styles.title}>{props.title}</IonTitle>
+                <IonButton fill="solid" onClick={onLogout} slot="end" className={styles.button}>
+                    Logout
                 </IonButton>
             </IonToolbar>
         </IonHeader>

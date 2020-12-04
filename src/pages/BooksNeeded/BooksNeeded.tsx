@@ -14,7 +14,7 @@ interface Props { };
 function BooksNeededFC() {
 
     const { currentUser } = useAuth();
-    const [photoUrl, setPhotoUrl] = React.useState('https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Book.svg/1200px-Book.svg.png');
+    const [photoUrl, setPhotoUrl] = React.useState('https://www.ultimatesource.toys/wp-content/uploads/2013/11/dummy-image-landscape-1.jpg');
     const [loading, setLoading] = React.useState(false);
     const [error, setError] = React.useState<string | null>(null);
     const [message, setMessage] = React.useState<string | null>(null);
@@ -64,6 +64,11 @@ function BooksNeededFC() {
         try {
             let tposts = await database.ref('/need').once('value');
             let val = tposts.val();
+            if(val === null) {
+                alert("No Posts Found");
+                setLoading(false);
+                return;
+            };
             //let fposts = Object.values<Post>(val).filter((x: Post) => x.author !== currentUser?.uid);
             setPosts(Object.values(val));
         }
@@ -113,10 +118,7 @@ function BooksNeededFC() {
 
     return (
         <IonPage className={styles.page}>
-            {loading ? <div className="sdiv">
-                <div className="spinner"></div>
-            </div> : null}
-            <AppBar title="Books Needed" />
+            <AppBar title="Requests" />
             <IonContent className={styles.page}>
                 {error ? <Alert
                     message={error}
@@ -135,9 +137,6 @@ function BooksNeededFC() {
                     onClose={() => setMessage(null)}
                 /> : null}
                 <IonCard>
-                    <IonCardHeader>
-                        <img onClick={upload} className={styles.img} src={photoUrl} alt="book" />
-                    </IonCardHeader>
                     <IonCardContent>
                         <IonInput ref={titleRef} placeholder="Post Title" type="text"></IonInput>
                         <IonInput ref={phoneRef} placeholder="Phone Number" type="tel"></IonInput>

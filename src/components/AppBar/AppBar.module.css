@@ -2,10 +2,9 @@
   --background: #054A29;
 }
 .title {
-  font-family: "Open Sans", sans-serif;
+  color: white;
 }
 .button {
-  font-family: "Open Sans", sans-serif;
   --color: white !important;
 }
 .logout {
