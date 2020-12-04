@@ -23,6 +23,8 @@ import '@ionic/react/css/display.css';
 import './theme/variables.css';
 import 'antd/dist/antd.css';
 import './App.css';
+import './styles.scss';
+
 import { AuthProvider } from './context/AuthProvider';
 import LoginFC from './pages/Login/Login';
 import SignupFC from './pages/Signup/Signup';
@@ -31,6 +33,8 @@ import PrivateRoute from './route/PrivateRoute';
 import BooksNeededFC from './pages/BooksNeeded/BooksNeeded';
 import BooksGivenFC from './pages/BooksGiven/BooksGiven';
 import SettingsFC from './pages/Settings/Settings';
+import ChatFC from './pages/Chat/Chat';
+import ChatsFC from './pages/Chats/Chats';
 
 const App: React.FC = () => (
   <IonApp>
@@ -44,6 +48,8 @@ const App: React.FC = () => (
             <PrivateRoute path="/need" component={BooksNeededFC} exact={true} />
             <PrivateRoute path="/give" component={BooksGivenFC} exact={true} />
             <PrivateRoute path="/settings" component={SettingsFC} exact={true} />
+            <PrivateRoute path="/chats" component={ChatsFC} exact={true} />
+            <PrivateRoute path="/chat/:id" component={ChatFC} />
             <Route exact path="/" render={() => <Redirect to="/need" />} />
             <Route exact path="/home" render={() => <Redirect to="/need" />} />
           </Switch>

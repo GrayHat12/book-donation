@@ -13,3 +13,23 @@ export interface Post {
     body: string;
     book: Book;
 };
+
+export interface Chat {
+    user1: string;
+    user2: string;
+    conversations: {
+        [timestamp: string]: Conversation;
+    };
+}
+
+export interface Conversation {
+    message: Message;
+    timestamp: string;
+    from: string;
+    to: string;
+}
+
+export interface Message {
+    text?: string;
+    image?: string;
+}

@@ -1,0 +1,13 @@
+.clearfix {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.system {
+  background: #20272b;
+  color: #fad964;
+  text-align: center;
+  width: 50%;
+  border-radius: 7px;
+  margin-bottom: 30px;
+}

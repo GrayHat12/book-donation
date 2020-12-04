@@ -7,3 +7,12 @@
 .isNAuth {
   border: 2px solid #11e662;
 }
+.space {
+  display: flex;
+  justify-content: space-between;
+}
+.delete {
+  width: 30px;
+  height: 30px;
+  margin: 8px;
+}

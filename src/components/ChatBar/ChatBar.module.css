@@ -1,0 +1,29 @@
+.toolbar {
+  --background: #5985bb;
+}
+.title {
+  font-family: "Open Sans", sans-serif;
+  max-height: 30px !important;
+  font-size: initial;
+  font-weight: 400;
+}
+.button {
+  font-family: "Open Sans", sans-serif;
+  --color: white !important;
+}
+.logout {
+  width: 20px;
+  height: 20px;
+}
+.image {
+  border-radius: 50%;
+  max-width: 40px;
+  max-height: 40px;
+  overflow: hidden;
+}
+.sub {
+  font-size: small;
+  font-weight: lighter;
+  color: whitesmoke;
+  font-style: italic;
+}

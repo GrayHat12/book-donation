@@ -18,7 +18,7 @@ function BooksNeededFC() {
     const [loading, setLoading] = React.useState(false);
     const [error, setError] = React.useState<string | null>(null);
     const [message, setMessage] = React.useState<string | null>(null);
-    const [posts, setPosts] = React.useState<Post[]>([]);
+    const [posts, setPosts] = React.useState<{ [index: string]: Post }>({});
 
     const titleRef = React.createRef<HTMLIonInputElement>();
     const phoneRef = React.createRef<HTMLIonInputElement>();
@@ -65,7 +65,7 @@ function BooksNeededFC() {
             let tposts = await database.ref('/need').once('value');
             let val = tposts.val();
             //let fposts = Object.values<Post>(val).filter((x: Post) => x.author !== currentUser?.uid);
-            setPosts(Object.values(val));
+            setPosts(val);
         }
         catch (err) {
             console.error(err);
@@ -149,7 +149,7 @@ function BooksNeededFC() {
                         <IonButton onClick={postNeeded}>POST</IonButton>
                     </IonCardContent>
                 </IonCard>
-                {posts.map((v, i) => <PostFC {...v} key={i} />)}
+                {Object.keys(posts).map((v, i) => <PostFC onDelete={getNeededPosts} type="need" {...posts[v]} id={v} key={i} />)}
             </IonContent>
             <BottomBarFC selected="need" />
         </IonPage>

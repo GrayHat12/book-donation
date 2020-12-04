@@ -11,7 +11,7 @@ interface Props { };
 
 function SettingsFC(props: Props) {
     const { currentUser } = useAuth();
-    const [photoUrl, setPhotoUrl] = React.useState((currentUser && currentUser.photoURL) ? currentUser.photoURL : 'https://lh3.googleusercontent.com/a-/AOh14Gif1-AJzHpwRWmDMwTNUt9Wf6RmnUUw4yqKVP1Ciu0=s96-c');
+    const [photoUrl, setPhotoUrl] = React.useState((currentUser && currentUser.photoURL) ? currentUser.photoURL : 'https://www.xovi.com/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png');
     const [loading, setLoading] = React.useState(false);
     const [error, setError] = React.useState<string | null>(null);
     const [message, setMessage] = React.useState<string | null>(null);
